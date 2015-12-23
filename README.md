@@ -1,7 +1,7 @@
-Site of Jenny Watts
+Site of Mike Watts
 ====================
 
-Jenny Watts is a professional jazz musician as well as a piano teacher. This is her personal website.
+Mike Watts is a professional studio musician, composer, and orchestrator. This is his personal website.
 
 ## Instructions
 ```
