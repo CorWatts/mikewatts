@@ -19,7 +19,7 @@ body {
 
   #about {
     background-image: url("/img/darkened_hands.jpeg");
-		background-position: 100% 50%;
+    background-position: 100% 50%;
     background-size:cover;
     min-height: 500px;
     height: auto;
@@ -40,10 +40,15 @@ body {
   }
 
   #gallery {
-    height: 200px;
+    height: 400px;
     h2 {
       padding-top: 80px;
       margin: 0px;
+    }
+    .carousel {
+      .carousel-item {
+        width: 300px;
+      }
     }
   }
 
@@ -77,20 +82,20 @@ body {
 
     #wrapper {
       margin: 40px auto;
-			width: 100%;
-			max-width: 460px;
+      width: 100%;
+      max-width: 460px;
       padding: 0px 25px;
 
-			.audiojs {
-				max-width: 460px;
-				width: 100%;
-			}
-			.audiojs .play-pause {
-				width: 45px;
-			}
-			.audiojs .scrubber {
-				width: calc(100% - 180px) /* 40px play + 140px time */
-			}
+      .audiojs {
+        max-width: 460px;
+        width: 100%;
+      }
+      .audiojs .play-pause {
+        width: 45px;
+      }
+      .audiojs .scrubber {
+        width: calc(100% - 180px) /* 40px play + 140px time */
+      }
 
       ol {
         padding: 0px;
@@ -114,36 +119,35 @@ body {
       }
       li.playing {
         color: #aaa;
-				text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.3);
-			}
-			li.playing a {
-				color: #000;
-			}
-			li.playing:before {
-				content: '♬';
-				width: 14px;
-				height: 14px;
-				padding: 3px;
-				line-height: 14px;
-				margin: 0px;
-				position: absolute;
-				left: -24px;
-				top: 9px;
-				color: #000;
-				font-size: 13px;
-				text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
-			}
-		}
+        text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.3);
+      }
+      li.playing a {
+        color: #000;
+      }
+      li.playing:before {
+        content: '♬';
+        width: 14px;
+        height: 14px;
+        padding: 3px;
+        line-height: 14px;
+        margin: 0px;
+        position: absolute;
+        left: -24px;
+        top: 9px;
+        color: #000;
+        font-size: 13px;
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+      }
+    }
   }
-
-	.page-footer {
-		margin-top: 0px;
-		padding-top: 0px;
-		a {
-			&:hover {
-				text-decoration: underline;
-				cursor: pointer;
-			}
-		}
-	}
+  .page-footer {
+    margin-top: 0px;
+    padding-top: 0px;
+    a {
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
 }
