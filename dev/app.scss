@@ -30,7 +30,7 @@ body {
       height: 50px;
 
       .brand-logo {
-        margin: 10px;
+        margin: 5px 10px 10px 10px;
       }
     }
 
@@ -149,6 +149,12 @@ body {
         text-decoration: underline;
         cursor: pointer;
       }
+    }
+  }
+  @media only screen
+  and (max-device-width : 480px) {
+    .page-footer {
+      font-size: 12px;
     }
   }
 }
