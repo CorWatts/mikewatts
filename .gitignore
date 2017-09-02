@@ -4,5 +4,5 @@ css/*
 !css/.gitignore
 js/*
 !js/.gitignore
-font/roboto/*
-!font/roboto/.gitignore
+fonts/roboto/*
+!fonts/roboto/.gitignore

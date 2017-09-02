@@ -16,7 +16,8 @@ js/app.js:
 	cp -r $(src)/audiojs $(main)/js/audiojs
 
 fonts/*:
-	cp $(materialize)/fonts/roboto/* $(main)/font/roboto/
+	mkdir -p $(main)/fonts/roboto
+	cp $(materialize)/fonts/roboto/* $(main)/fonts/roboto/
 
 # compile but don't minify shiz
 movecss:
@@ -27,7 +28,7 @@ movejs:
 	cp -r $(src)/audiojs $(main)/js/audiojs
 
 movefonts:
-	cp $(materialize)/fonts/roboto/* $(main)/font/roboto/
+	cp $(materialize)/fonts/roboto/* $(main)/fonts/roboto/
 
 # clean shiz
 clean:
