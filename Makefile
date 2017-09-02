@@ -1,7 +1,7 @@
 main=.
 src=$(main)/dev
 materialize = $(main)/node_modules/materialize-css
-uglifydir = $(main)/node_modules/uglifyjs/bin
+#uglifydir = $(main)/node_modules/.binuglifyjs/bin
 nodesassdir = $(main)/node_modules/node-sass/bin
 
 all: css/app.css js/app.js fonts/*
@@ -12,11 +12,11 @@ css/app.css:
 	$(nodesassdir)/node-sass --output-style compressed $(src)/app.scss > $(main)/css/app.css
 
 js/app.js:
-	$(uglifydir)/uglifyjs $(materialize)/bin/materialize.js $(src)/app.js > $(main)/js/app.js
+	npx uglifyjs $(materialize)/bin/materialize.js $(src)/app.js > $(main)/js/app.js
 	cp -r $(src)/audiojs $(main)/js/audiojs
 
 fonts/*:
-	cp $(materialize)/font/roboto/* $(main)/font/roboto/
+	cp $(materialize)/fonts/roboto/* $(main)/font/roboto/
 
 # compile but don't minify shiz
 movecss:
@@ -27,7 +27,7 @@ movejs:
 	cp -r $(src)/audiojs $(main)/js/audiojs
 
 movefonts:
-	cp $(materialize)/font/roboto/* $(main)/font/roboto/
+	cp $(materialize)/fonts/roboto/* $(main)/font/roboto/
 
 # clean shiz
 clean:
