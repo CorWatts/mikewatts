@@ -39,108 +39,107 @@ body {
     }
   }
 
-  #gallery {
-    height: 400px;
-    padding-top: 40px;
-    h2 {
-      padding-top: 80px;
-      margin: 0px;
-    }
-    .carousel {
-      .carousel-item {
-        width: 300px;
+  #credits2 {
+    table {
+      td {
+        padding: 5px 5px;
       }
     }
   }
 
   #contact {
-    height: 200px;
     h5 {
-      margin-top: 80px;
+      margin: 100px auto 100px auto;
     }
   }
 
-  .audioplayer {
-    color: #666;
-    font-family: sans-serif;
-    line-height: 1.4;
+  #listen {
+    .listen-text {
+      padding-top: 65px;
+    }
 
-    h1 {
-      color: #444;
-      font-size: 1.2em;
-      padding: 14px 2px 12px;
-      margin: 0px;
-      em {
-        font-style: normal;
-        color: #999;
+    .audioplayer {
+      color: #666;
+      font-family: sans-serif;
+      line-height: 1.4;
+
+      h1 {
+        color: #444;
+        font-size: 1.2em;
+        padding: 14px 2px 12px;
+        margin: 0px;
+        em {
+          font-style: normal;
+          color: #999;
+        }
       }
-    }
 
-    a {
-      color: #888;
-      text-decoration: none;
-    }
+      a {
+        color: #888;
+        text-decoration: none;
+      }
 
-    #wrapper {
-      margin: 40px auto;
-      width: 100%;
-      max-width: 460px;
-      padding: 0px 25px;
-
-      .audiojs {
-        max-width: 460px;
+      #wrapper {
+        margin: 40px auto;
         width: 100%;
-      }
-      .audiojs .play-pause {
-        width: 45px;
-      }
-      .audiojs .scrubber {
-        width: calc(100% - 180px) /* 40px play + 140px time */
-      }
+        max-width: 460px;
+        padding: 0px 25px;
 
-      ol {
-        padding: 0px;
-        margin: 0px;
-        list-style: decimal-leading-zero inside;
-        color: #ccc;
-        border-top: 1px solid #ccc;
-        font-size: 0.9em;
-      }
-      ol li {
-        position: relative;
-        margin: 0px;
-        padding: 9px 2px 10px;
-        border-bottom: 1px solid #ccc;
-        cursor: pointer;
-      }
-      ol li a {
-        display: block;
-        text-indent: -3.3ex;
-        padding: 0px 0px 0px 20px;
-      }
-      li.playing {
-        color: #aaa;
-        text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.3);
-      }
-      li.playing a {
-        color: #000;
-      }
-      li.playing:before {
-        content: '♬';
-        width: 14px;
-        height: 14px;
-        padding: 3px;
-        line-height: 14px;
-        margin: 0px;
-        position: absolute;
-        left: -24px;
-        top: 9px;
-        color: #000;
-        font-size: 13px;
-        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+        .audiojs {
+          max-width: 460px;
+          width: 100%;
+        }
+        .audiojs .play-pause {
+          width: 45px;
+        }
+        .audiojs .scrubber {
+          width: calc(100% - 180px) /* 40px play + 140px time */
+        }
+
+        ol {
+          padding: 0px;
+          margin: 0px;
+          list-style: decimal-leading-zero inside;
+          color: #ccc;
+          border-top: 1px solid #ccc;
+          font-size: 0.9em;
+        }
+        ol li {
+          position: relative;
+          margin: 0px;
+          padding: 9px 2px 10px;
+          border-bottom: 1px solid #ccc;
+          cursor: pointer;
+        }
+        ol li a {
+          text-indent: -3.3ex;
+          padding: 0px 0px 0px 20px;
+        }
+        li.playing {
+          color: #aaa;
+          text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.3);
+        }
+        li.playing a {
+          color: #000;
+        }
+        li.playing:before {
+          content: '♬';
+          width: 14px;
+          height: 14px;
+          padding: 3px;
+          line-height: 14px;
+          margin: 0px;
+          position: absolute;
+          left: -24px;
+          top: 9px;
+          color: #000;
+          font-size: 13px;
+          text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+        }
       }
     }
   }
+
   .page-footer {
     margin-top: 0px;
     padding-top: 0px;
