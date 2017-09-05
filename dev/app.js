@@ -6,9 +6,15 @@ $( document ).ready(function(){
   $('.side-nav li a').click(function() {
     $('.button-collapse').sideNav('hide');
   });
-
-console.log("1");
-console.log("2");
+  $('.email').append('<a href="mailto:' +
+                     'mike' +
+                     '@' +
+                     'mikewatts' +
+                     'music.com">mike' +
+                     '@' +
+                     'mikewatts' +
+                     'music.com' +
+                     '</a>');
 
 
 	$(function() { 
