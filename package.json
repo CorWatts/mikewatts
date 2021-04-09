@@ -1,12 +1,12 @@
 {
-  "name": "jennywatts",
+  "name": "mikewatts",
   "version": "1.0.0",
-  "description": "Jenny Watts' site",
+  "description": "Mike Watts' site",
   "main": "index.html",
   "dependencies": {
     "materialize-css": "^0.97.3",
-    "node-sass": "^3.4.2",
-    "uglify-js": "^3.0.28"
+    "node-sass": "^5.0.0",
+    "uglify-js": "^3.13.3"
   },
   "devDependencies": {},
   "scripts": {
